@@ -125,6 +125,9 @@ public class MainActivity extends Activity {
         if (counter2_1 == counter2_2 && counter2_2 == counter2_3 && counter2_3 == counter2_4 && counter2_4 == counter2_5) {
             CheckBox check_kmesp1 = findViewById(R.id.checkKMESP1);
             check_kmesp1.setChecked(false);
+
+            CheckBox check_appesp = findViewById(R.id.checkKMESP2);
+            check_appesp.setChecked(false);
             ESP1_APP=false;
         } else {
             CheckBox check_kmesp1 = findViewById(R.id.checkKMESP1);
@@ -328,11 +331,15 @@ public class MainActivity extends Activity {
                 if (odbierane.contains("R") && odbierane.contains("K")) {
                     Switch Open_close = findViewById(R.id.switch3);
                     Open_close.setChecked(true);
+                    open_c = "K";
+
                 }
 
                 if (odbierane.contains("R") && odbierane.contains("O")) {
                     Switch Open_close = findViewById(R.id.switch3);
                     Open_close.setChecked(false);
+                    open_c = "O";
+
                 }
 
                 if (odbierane.contains("K"))
